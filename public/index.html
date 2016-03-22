@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tracker">
+<head>
+  <meta charset="UTF-8">
+  <title>Hours Tracker</title>
+  <link rel="stylesheet" href="bower-components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+  <link rel="stylesheet" href="bower-components/angular-material-datetimepicker/css/material-datetimepicker.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="row">
+    <!-- header and nav -->
+    <main-header class="col-md-12"></main-header>
+    
+    <!-- Here is the main content of every section -->
+    <div ui-view class="col-md-12 main-content container"></div>
+
+  </div>
+  <main-footer></main-footer>
+
+<!-- Scripts -->
+
+<!-- Bower components  -->
+<script src="bower-components/angular/angular.min.js"></script>
+<script src="bower-components/angular-animate/angular-animate.min.js"></script>
+<script src="bower-components/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="bower-components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower-components/angular-material/angular-material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+<script src="bower-components/moment/moment.js"></script>
+<!-- <script src="bower-components/jquery/dist/jquery.min.js"></script> -->
+<script src="index.module.js"></script>
+<script src="index.route.js"></script>
+
+<!-- Angular Material Library -->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script> -->
+<script src="bower-components/angular-material-datetimepicker/js/angular-material-datetimepicker.min.js"></script>
+
+
+<!-- Directives -->
+<script src="/common/directives/header/header.directive.js"></script>
+<script src="/common/directives/navbar/navbar.directive.js"></script>
+<script src="/common/directives/footer/footer.directive.js"></script>
+<script src="/common/directives/calendar/calendar.controller.js"></script>
+<script src="/common/directives/calendar/calendar.directive.js"></script>
+<script src="/common/services/request.service.js"></script>
+<script src="views/register/register.controller.js"></script>
+<script src="views/logIn/logIn.controller.js"></script>
+<script src="views/clients/clients.controller.js"></script>
+<script src="views/reports/reports.controller.js"></script>
+<script src="views/newTracking/tracking.controller.js"></script>
+<script src="main/main.controller.js"></script>
+</body>
+</html>
+

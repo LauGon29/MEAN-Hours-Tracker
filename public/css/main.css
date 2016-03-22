@@ -1,0 +1,282 @@
+@font-face{font-family:proxima_nova_alt_regular;
+  src:url(../fonts/proxima_nova_alt_regular-webfont.eot);
+  src:url(../fonts/proxima_nova_alt_regular-webfont.eot?#iefix) format("embedded-opentype"),
+  url(../fonts/proxima_nova_alt_regular-webfont.woff2) format("woff2"),
+  url(../fonts/proxima_nova_alt_regular-webfont.woff) format("woff"),
+  url(../fonts/proxima_nova_alt_regular-webfont.ttf) format("truetype"),
+  url(../fonts/proxima_nova_alt_regular-webfont.svg) format("svg");font-weight:400;font-style:normal}
+
+ html, body, .container-fluid, .row {
+  overflow: auto;
+} 
+
+body {
+  background: rgba( 0,  0, 0,.07); 
+  color: #292929;
+  font-family: 'proxima_nova_alt_regular'
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+header {
+  background: #353535;
+  color: yellow;
+  padding: 10px 20px;
+}
+
+footer {
+  background: #292929;
+  padding: 20px 0;
+  color: #EAE701;
+  text-align: center;
+  width: 100%;
+}
+
+ul {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+textarea {
+  border-color: rgba(0,0,0,0.12);
+}
+
+ul li {
+  list-style: none;
+}
+
+.login .md-button, .register .md-button {
+  background: #292929;
+  color: yellow;
+  vertical-align: top;
+}
+
+.login .signin-btn, .register .btn-close-login {
+  color: #fff;
+}
+
+.btn1 {
+  background-color: #292929;
+  color: yellow;
+  margin-top: 35px;
+ }
+
+ .md-button:hover {
+  background: yellow;
+  color: #292929;
+ }
+
+/*STYLES FOR NAV*/
+.logo {
+  background: url(../../../images/logo.png) no-repeat center;
+  background-size: contain;
+  color:#fff;
+  display: inline-block;
+  height: auto;
+  margin: 0;  
+  text-indent: -9999px;
+  width: 100px;   
+}
+
+nav {
+  padding: 10px 0 0;
+}
+.navbar-inverse {
+  background: #353535;
+  border: none;
+}
+
+.navbar ul {
+  float: right;
+  padding-top: 10px;
+}
+
+.navbar li {
+  cursor: pointer;
+  display: inline;
+  padding: 37px 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.navbar li:last-child {
+  margin: 0;
+}
+
+.navbar li i{
+  color: yellow;
+  font-size: 24px;
+}
+
+.navbar li:hover i{
+  color: yellow;
+}
+
+.navbar li:hover {
+  background: #292929;
+  padding: 37px 30px;
+}
+
+
+/*STYLES FOR CALENDAR*/
+.header-calendar i {
+  color: #292929;
+  padding: 0 15px;
+}
+
+.header-calendar i:hover {
+  font-weight: bold;
+}
+
+.names li {
+  padding: 20px 0;
+  width: 13%;
+}
+
+.week li {
+  display: inline-block;
+}
+
+.date-day {
+  height: 80px;
+  padding: 30px 0;
+  width: 14%;
+}
+
+.date-day:hover {
+  background: rgba(69,69,69,.35);
+/*  border-radius: 50%;
+*/}
+
+li.day.selected {
+  background:  rgba(29,29,29,.05);
+/*  border-radius: 50%;
+*/}
+
+
+div.week > li.day.today {
+  background: #454545;
+  /*border-radius: 50%;*/
+  color: yellow;
+  font-weight: bold;
+} 
+
+.title-section {
+  padding: 60px 0;
+}
+
+/*STYLES FOR CLIENT REGISTER*/
+.client-register .md-input{
+  color: #292929;
+}
+
+.client-register .md-button.md-raised {
+  background: #292929;
+  color: yellow;
+}
+
+.client-register .md-button.md-raised:hover {
+  background: yellow;
+  color: #292929;
+}
+
+/*NEW ENTRY*/
+.new-entry {
+  color: #aaa;
+  position: absolute;
+  left: 20%;
+  background: #fff;
+  width: 65%;
+  padding: 50px;
+}
+
+/*STYLES FOR DETAILTRACKER*/
+.current-day {
+  background: yellow;
+  color: #292929;
+  padding: 15px;
+}
+
+.detail-tracker {
+  background: #454545;
+  box-shadow: box-shadow: 2px 2px 3px #353535;
+  color: #fff;
+  margin-bottom: 60px;
+  min-height: 450px; 
+  padding:0 20px 60px;
+  position: relative;
+}
+
+.daysTracker {
+  border-bottom: 1px solid #292929;
+  overflow: hidden;
+  padding: 30px 30px 15px;
+}
+
+.daysTracker:last-child{
+  border-bottom: initial;
+}
+
+.daysTracker h4 {
+  display: inline-block;
+  margin-top: 0;
+}
+
+.daysTracker h4, h5{
+  color: yellow;
+}
+
+.daysTracker i {
+  color: yellow;
+  float: right;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.description-work {
+  margin: 25px 0;
+}
+
+
+/*STYLES FOR REPORT VIEW*/
+.report {
+  margin-top: 60px;
+}
+
+.report h3 {
+  margin-bottom: 60px;
+}
+
+
+a.md-button.md-primary.md-fab {
+  background: #292929;
+  bottom: 2px;
+  color: yellow;
+  /*float: right;*/
+  right: 20px;
+  position: absolute;
+}
+
+a.md-button.md-primary.md-fab:not([disabled]):hover {
+  background: yellow;
+  color: #292929;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background: rgba(29,29,29,.03);
+}
+
+.col-md-12 {
+  padding: 0;
+}
+
+.row{
+  margin: 0;
+  height: 100%;
+}
+
+

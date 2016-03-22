@@ -1,0 +1,12 @@
+<nav class="navbar navbar-static-top navbar-inverse main-nav">
+    
+  <h1 class="logo">Logo</h1>
+	
+  <ul ng-if="nav.location.path() != '/login'">
+  <span>Hi {{nav.currentUser.name}}</span>
+  	<a ui-sref="clients"><li><i class="fa fa-user"></i></li></a>
+    <li ui-sref="home"><i class="fa fa-calendar"></i></li>
+    <li ui-sref="reports"><i class="fa fa-bar-chart"></i></li>
+    <li ng-click="nav.signOut()"><i class="fa fa-sign-out"></i></li>
+  </ul>
+</nav>

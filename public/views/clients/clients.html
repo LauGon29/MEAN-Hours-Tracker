@@ -1,0 +1,44 @@
+<h2 class="text-center title-section">Clients</h2>
+<div class="container client-register">
+
+  <h4>Your List</h4>
+  <md-input-container>
+    <label for="client"></label>
+    <md-select  ng-model="client" name="client" id="client">
+      <md-option ng-repeat="client in clientCtrl.currentClients" value="{{$index}}">{{client.name}}</md-option>
+    </md-select>
+  </md-input-container>
+    
+  <md-button class="md-raised" ng-click="clientCtrl.selectedClient(client)">Start</md-button> 
+  <div class="client-form">
+    <h4>Add a new client</h4>
+    
+    <form class="form-group" name="formClient" novalidate>
+      <md-input-container class="md-block" flex-gt-sm>
+        <label for="name">Client Name <span ng-show="formClient.name.$invalid">*</span></label>
+        <input ng-model="client.name" required> 
+      </md-input-container>
+
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>Company <span ng-show="formClient.company.$invalid">*</span></label>
+        <input ng-model="client.company" required>
+      </md-input-container>
+      
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>Email <span ng-show="formClient.email.$invalid">*</span></label>
+        <input ng-model="client.email" required>
+      </md-input-container>
+      
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>Cost per hour <span ng-show="formClient.company.$invalid">*</span></label>
+        <input ng-model="client.cost" required>
+      </md-input-container>
+
+      <md-button type="submit" class="md-raised" ng-click="clientCtrl.addClient(client)"">Save</i></md-button>
+
+     </form>
+  </div>
+
+</div>
+  
+

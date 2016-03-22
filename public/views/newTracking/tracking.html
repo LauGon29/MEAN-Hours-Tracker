@@ -1,0 +1,33 @@
+<div class="new-entry">
+  <h3>Add new entry</h3>
+  <div>
+      <div>
+        <form class="form-group">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>Title work</label>
+            <input ng-model="tracking.title">
+          </md-input-container>
+          
+          <md-input-container class="md-input">
+            <label>Start Time</label>
+            <input type="time" class="md-input" ng-model="tracking.startTime" ng-change="startTime=tracking.startTime">
+          </md-input-container>
+
+          <md-input-container class="md-input">
+            <label>End Time</label>
+            <input type="time" class="md-input" ng-model="tracking.endTime" ng-change="endTime=tracking.endTime">
+          </md-input-container>
+          
+          <md-input-container class="md-input" ng-click="newTracker.calculate(tracking)">
+            <label>Total Hours</label>
+            <input type="number" class="md-input" ng-model="tracking.hours" value="{{newTracker.complete}}">
+          </md-input-container>
+      
+          <h4>Description</h4> 
+          <textarea class="col-md-12" name="description" id="" cols="30" rows="10" placeholder="Description" ng-model="tracking.description"></textarea>
+          <button type="submit" class="btn btn-success" ng-click="newTracker.createTodo(tracking)" ui-sref="home">Save</i></button>
+          <button class="btn btn-warning" ui-sref="home">Cancel</i></button>
+        </form>
+      </div>    
+  </div>
+</div>

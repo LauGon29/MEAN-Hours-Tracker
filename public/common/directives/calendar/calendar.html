@@ -1,0 +1,19 @@
+<div class="header-calendar text-center">
+  <h2><i class="fa fa-angle-left" ng-click="previous()"></i>{{month.format("MMMM, YYYY")}}<i class="fa fa-angle-right" ng-click="next()"></i></h2>
+</div>
+
+<div class="week names toolbar">
+  <ul class="text-center">
+    <li class="day">Sun</li>
+    <li class="day">Mon</li>
+    <li class="day">Tue</li>
+    <li class="day">Wedy</li>
+    <li class="day">Thu</li>
+    <li class="day">Fri</li>
+    <li class="day">Sat</li>
+  </ul>
+</div>
+
+<div class="week" ng-repeat="week in weeks">
+  <li class="day date-day text-center" ng-class="{ today: day.isToday, 'different-month': !day.isCurrentMonth, selected: day.date.isSame(selected) }" ng-click="select(day)" ng-repeat="day in week.days" ng-model="selected">{{day.number}}</li>
+</div>

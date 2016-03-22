@@ -1,0 +1,40 @@
+<div class="row">
+	<div class="container report">
+		<h3 class="text-center">Progress Report</h3>
+		<table class="table table-striped">
+	  	<thead>
+	    	<tr>
+	        <th>Title Work</th>
+	        <th>Description</th>
+	        <th>Date</th>
+	        <th>Hours</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr ng-repeat="works in reports.currentClientWorks">
+	        <td class="col-md-3">{{works.title}}</td>
+	        <td class="col-md-3">{{works.description}}</td>
+	        <td class="col-md-3">{{works.day}}</td>
+	        <td class="col-md-3">{{works.hours}}</td>
+	      </tr>
+	      
+	      <tr>
+	      	<td></td>
+	      	<td></td>
+	      	<td>Total Hours</td>
+	      	<td ng-init="reports.totalHours()">{{reports.hours}}</td>
+	      </tr>
+
+	      <tr>
+	      	<td></td>
+	      	<td></td>
+	      	<td>Total Cost</td>
+	      	<td>${{reports.costHour * reports.hours}}</td>
+	      </tr>
+	    </tbody>
+	  </table>
+	</div>	
+</div>
+
+
+
